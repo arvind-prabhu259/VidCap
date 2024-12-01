@@ -48,10 +48,10 @@ METEOR (Metric for Evaluation of Translation with Explicit ORdering): Evaluates 
 Achieved METEOR score: 0.043
 These scores reflect the model's ability to generate captions that partially align with human-written descriptions.
 
-Future Improvements
+# Future Improvements
 Data Augmentation: Increase the diversity of training data by incorporating additional datasets or augmenting the MSVD dataset.
 Attention Mechanism: Incorporate attention layers to focus on relevant frames when generating captions.
 Transformer Models: Explore transformer-based architectures (e.g., Vision Transformers and GPT) for improved sequence generation.
 Evaluation Metrics: Consider additional evaluation metrics like CIDEr and ROUGE for more comprehensive analysis.
-Conclusion
+# Conclusion
 The VidCap project demonstrates a promising approach to video captioning by combining deep learning techniques with feature extraction from pretrained models. While the current implementation provides a good starting point, there is significant scope for enhancements in both model design and training methodology.
