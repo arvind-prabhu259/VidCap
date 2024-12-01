@@ -30,6 +30,7 @@ These features are stored in an array of shape (80, 4096) for each video.
 ## 2. Caption Generation
 # Model Architecture:
 ![image](https://github.com/user-attachments/assets/c4fc5893-1ffa-4283-974b-273d81616efd)
+
 Encoder: A stack of Long Short-Term Memory (LSTM) layers processes the sequential frame features extracted from VGG16.
 Decoder: Another LSTM network generates captions, conditioned on the output of the encoder.
 ## Input to the Model:
@@ -40,6 +41,15 @@ Word embeddings for tokenized captions.
 Loss Function: Categorical cross-entropy was used for optimizing the model during training.
 Optimization Algorithm: Adam optimizer, with appropriate learning rate tuning.
 Training Data: A subset of the MSVD dataset, processed for both video frames and corresponding tokenized captions.
+
+Loss:
+
+![image](https://github.com/user-attachments/assets/8a95919a-2942-4f22-a483-6e19839914af)
+
+Accuracy:
+
+![image](https://github.com/user-attachments/assets/21650dee-9151-4b94-a772-4b467dfc125c)
+
 # Results
 The performance of the model was evaluated using standard metrics for text generation tasks:
 
